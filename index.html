@@ -3,97 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiger Cui - Personal Portfolio</title>
-    <meta name="description" content="Tiger Cui's personal portfolio and projects.">
+    <title>Tiger Cui</title>
+    <meta name="description" content="Tiger Cui personal academic homepage.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">Tiger Cui</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="topbar">
+            <a href="#home" class="nav-item">Homepage</a>
+            <a href="#about" class="nav-item">About Me</a>
+            <a href="#news" class="nav-item">News</a>
+            <a href="#publications" class="nav-item">Publications</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Hi, I'm Tiger Cui</h1>
-            <p class="subtitle">Developer | Builder | Creator</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+    <main id="home" class="layout">
+        <aside class="sidebar">
+            <img src="images/selfie.jpg" alt="Tiger Cui portrait" class="avatar">
+            <h1>Tiger Cui</h1>
+            <p class="tagline">Stay hungry, stay foolish.</p>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm passionate about building great things on the web. With a focus on clean code and user experience, I create projects that are both beautiful and functional.</p>
-            <div class="skills">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Git</span>
-            </div>
-        </div>
-    </section>
+            <p class="org">Computer Science Enthusiast</p>
+            <p class="org">Based in Hangzhou, China</p>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>A description of your first project. What problem does it solve?</p>
-                    <div class="project-links">
-                        <a href="#">View</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>A description of your second project. What was the process?</p>
-                    <div class="project-links">
-                        <a href="#">View</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Project Three</h3>
-                    <p>A description of your third project. What did you learn?</p>
-                    <div class="project-links">
-                        <a href="#">View</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <ul class="contact-list">
+                <li><a href="mailto:your.email@example.com">Email</a></li>
+                <li><a href="https://github.com/MrTuge123" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="#">Google Scholar</a></li>
+            </ul>
+        </aside>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Feel free to reach out to me on any of these platforms:</p>
-            <div class="social-links">
-                <a href="https://github.com/MrTuge123" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
-            </div>
-        </div>
-    </section>
+        <section class="content">
+            <section id="about" class="section-block">
+                <p>
+                    Hi! I am <strong>Tiger Cui</strong>. This is my personal webpage where I share my background,
+                    current interests, and selected work.
+                </p>
+                <p>
+                    I am focused on software engineering, web development, and AI-related projects.
+                    I enjoy building practical tools and learning through real-world projects.
+                </p>
+                <p>
+                    If you are interested in collaboration, feel free to reach out by email.
+                </p>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Tiger Cui. All rights reserved.</p>
-        </div>
+            <section id="news" class="section-block">
+                <h2>News</h2>
+                <ul class="bullet-list">
+                    <li><strong>2026.05</strong> Launched my personal webpage on GitHub Pages.</li>
+                    <li><strong>2026.04</strong> Built and deployed multiple front-end mini projects.</li>
+                    <li><strong>2026.03</strong> Started exploring AI-assisted development workflows.</li>
+                </ul>
+            </section>
+
+            <section id="publications" class="section-block">
+                <h2>Publications</h2>
+                <h3>Selected Projects and Writing</h3>
+                <ul class="bullet-list">
+                    <li><a href="#">Project Report: Building a Personal Portfolio with GitHub Pages</a></li>
+                    <li><a href="#">Notes: Practical CSS Layout Patterns for Beginners</a></li>
+                    <li><a href="#">Case Study: Turning Ideas into Deployable Web Apps</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright 2026 Tiger Cui. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

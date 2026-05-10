@@ -121,7 +121,9 @@ img { display: block; max-width: 100%; }
   justify-content: center;
   padding: calc(var(--nav-h) + 40px) 24px 60px;
   position: relative;
-  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(79,142,247,0.15) 0%, transparent 70%);
+  background:
+    linear-gradient(rgba(13,17,23,0.68), rgba(13,17,23,0.82)),
+    url('images/campus.jpg') center / cover no-repeat;
 }
 
 .hero-content {
@@ -181,6 +183,24 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.hero-contacts {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+}
+.hero-contact-link {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color var(--transition);
+}
+.hero-contact-link:hover { color: var(--accent); }
 
 .btn {
   display: inline-block;
